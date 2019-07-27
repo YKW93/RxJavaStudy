@@ -12,4 +12,12 @@
 > - RxJava 2.x 추가 팩토리 함수 : fromArray(), fromIterable(), fromCallable(), fromFuture(), fromPublisher()
 > - 기타 팩토리 함수 : interval(), range(), timer(), defer() 등
 
->>
+#### Single 클래스
+> Single 클래스는 Observable의 특수한 형태이다. Observable 클래스는 데이터를 무한하게 발행할 수 있지만 SingleClass 클래스는 오직 1개의 데이터만 발행하도록 한정한다.
+
+#### Maybe 클래스
+> Single 클래스와 마찬가지로 최대 데이터 하나를 가질 수 있지만 데이터 발행 없이 바로 데이터 발생을 완료(Single 클래스는 1개 완료, Maybe 클래스는 0 혹은 1개 완료) 할 수 있다. 즉, Maybe 클래스는 Single 클래스에 onComplete 이벤트가 추가된 형태이다.
+
+#### Subject 클래스
+> Subject 클래스는 차가운 Observable을 뜨거운 Observable로 변경해준다.
+> 주요 Subject 클래스 : AsyncSubject, BehaviorSubject, PublishSubject, ReplaySubject 등이 있다.
