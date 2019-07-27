@@ -22,6 +22,7 @@ public class CreateMethod {
      - 에러가 발생했을 때는 오직 onError 이벤트로만 에러를 전달해야 한다.
      - 배압(back pressure)을 직접 처리해야 한다.
          -> TODO 배압에 대해서 공부 필요..
+         -> 배압 : Observable에서 데이터를 발행하는 속도와 구독자가 데이터를 처리하는 속도의 차이가 클 때 발생한다.
     */
 
     private void createMethodTest() {

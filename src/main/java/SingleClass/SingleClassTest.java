@@ -15,7 +15,6 @@ public class SingleClassTest {
     private void singleTest() {
         /*
 
-        SingleClassTest 클래스는 Observable의 특수한 형태이다. Observable 클래스는 데이터를 무한하게 발행할 수 있지만 SingleClassTest 클래스는 오직 1개의 데이터만 발행하도록 한정한다.
           - SingleClassTest 클래스는 데이터 하나가 발행과 동시에 종료(onSuccess) 된다.
           - 라이프 사이클 관점에서 보면 onNext()와 onComplete() 함수가 onSuccess() 함수로 통합된 것이다.
           * SingleClassTest 클래스는 onSuccess(T value) 함수와 onError() 함수로 구성된다.
