@@ -26,3 +26,10 @@
 > - PublishSubject : 구독자가 subscribe() 함수를 호출하면 값을 발행하기 시작한다. (가장 평범한 Subject 클래스)
 > - ReplaySubjectClass : ReplaySubject 클래스는 구독자가 새로 생기면 항상 데이터의 처음부터 끝가지 발행하는 것을 보장해준다. 모든 데이터 내용을 저장해두는 과정 중 메모리 누수가 발생할 가능성을 염두에 두고 사용할 때 주의해야 한다.
 
+#### 용어 정리
+> - 데이터 발행자(data source) : Observable, Single, Maybe, Subject
+> - 데이터 수신자 : 구독자(Subscriber), 옵서버(Observer), 소비자(Consumer)
+
+> - 구독자 : RxJava에서 Observable과 연결할 때는 subscribe() 함수를 호출한다. 이 과정이 구독이므로 구독자가 된다.
+> - 옵서버 : RxJava는 옵서버 패턴을 구현한다. 따라서 데이터 발신자는 Observable이 되고 데이터 수신자를 옵서버라고 할 수 있다.
+> - 소비자 : RxJava 1.x에서는 subscribe() 함수를 호출할 때 Subscriber 클래스를 인자로 넘겼지만 RxJava2에서는 모두 함수형 인터페이스인 Consumer를 인자로 넘긴다.
