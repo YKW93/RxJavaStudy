@@ -1,4 +1,4 @@
-package ObservableClass;
+package Step1.ObservableClass;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;

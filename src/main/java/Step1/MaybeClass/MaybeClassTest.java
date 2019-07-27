@@ -1,4 +1,4 @@
-package MaybeClass;
+package Step1.MaybeClass;
 
 import io.reactivex.Maybe;
 import io.reactivex.MaybeObserver;

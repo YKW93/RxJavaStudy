@@ -1,4 +1,4 @@
-package SingleClass;
+package Step1.SingleClass;
 
 import io.reactivex.Observable;
 import io.reactivex.Single;
