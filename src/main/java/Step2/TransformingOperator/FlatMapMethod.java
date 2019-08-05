@@ -10,7 +10,7 @@ public class FlatMapMethod {
 
     public static void main(String[] args) {
         FlatMapMethod flatMapMethod = new FlatMapMethod();
-        flatMapMethod.test1();
+        flatMapMethod.test();
     }
 
     private void flatMapTest() {
